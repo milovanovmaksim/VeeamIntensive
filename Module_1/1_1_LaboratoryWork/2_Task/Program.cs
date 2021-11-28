@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _2_Task
 {
@@ -35,7 +36,7 @@ namespace _2_Task
         
         public int CoorX { get; set; }
         public int CoorY { get; set; }
-        public void Draw()
+        public override void Draw()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Draw a triangle at position with coordinates: ");
