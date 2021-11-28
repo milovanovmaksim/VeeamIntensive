@@ -7,7 +7,10 @@ namespace _2_Task
     {
         int CoorX { get; set; }
         int CoorY { get; set; }
-        public void Draw();
+        public virtual void Draw()
+        {
+            Console.WriteLine("Draw a shape");
+        }
     }
     
     public struct Point2D
@@ -44,7 +47,7 @@ namespace _2_Task
             Console.WriteLine("\nCoordinates triangle points:");
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"{Points[0]}\n{Points[1]}\n{Points[2]}", ConsoleColor.Green);
+            Console.WriteLine($"{Points[0]}\n{Points[1]}\n{Points[2]}\n", ConsoleColor.Green);
             Console.ResetColor();
         }
 
@@ -66,6 +69,9 @@ namespace _2_Task
                 new Point2D {X = 5, Y = 25, PointName="C"}};
             Triangle triangle = new Triangle(10, 52, points);
             triangle.Draw();
+
+            IShape2D triangle2 = new Triangle(10, 245, points);
+            triangle2.Draw();
         }
     }
 }
