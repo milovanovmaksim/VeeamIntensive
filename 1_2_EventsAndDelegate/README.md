@@ -4,3 +4,4 @@
 уведомление о том, что событие произошло. Подписаться или отписаться от события можно
 только через шину событий.
 Общая схема работы шины событий изображена на рисунке
+<img src="https://raw.githubusercontent.com/greenrobot/EventBus/master/EventBus-Publish-Subscribe.png">
