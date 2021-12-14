@@ -36,7 +36,7 @@ namespace _2_Task
         
         public int CoorX { get; set; }
         public int CoorY { get; set; }
-        public override void Draw()
+        public void Draw()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Draw a triangle at position with coordinates: ");
