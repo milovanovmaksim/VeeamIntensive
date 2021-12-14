@@ -7,10 +7,7 @@ namespace _2_Task
     {
         int CoorX { get; set; }
         int CoorY { get; set; }
-        public virtual void Draw()
-        {
-            Console.WriteLine("Draw a shape");
-        }
+        public virtual void Draw();
     }
     
     public struct Point2D
